@@ -2,7 +2,7 @@ import unittest
 from Analiza import *
 import pandas as pd
 
-class Test_Anazlizy(unittest.TestCase):
+class Test_Analizy(unittest.TestCase):
 
 # Test przeprowadzany na małym zbiorze danych
     def setUp(self):
@@ -37,7 +37,7 @@ class Test_Anazlizy(unittest.TestCase):
         self.assertEqual(unique, ["ola", "ula"])
 
 # Nowa klasa do testowania funkcji neighbour
-class Test_Anazlizy2(unittest.TestCase):
+class Test_Analizy2(unittest.TestCase):
     def setUp(self):
         self.data = pd.Series({"ola": {"geo": {"lat": 1, "lng": 1}}, \
             "jola" : {"geo": {"lat": 3, "lng": 2}}, \
